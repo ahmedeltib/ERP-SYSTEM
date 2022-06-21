@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- render all elment  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- start header -->
+    <div class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="imgs/heart-2320561_960_720.png">
+            </a>
+            <nav class="main-nav">
+                <i class="fas fa-bars"></i>
+                <ul class="links">
+                    <li class="menu">
+                        <a href="#">الفاتوره</a> 
+                        <ul class="sub-menu">
+                            <li> <a href="bill.html">reset</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="">المخازن</a>
+                        <ul class="sub-menu">
+                            <li> <a href="daily-sales.html">مبيعات يوميه</a> </li>
+                            <li> <a href="whole-sales.html">مبيعات كليه</a> </li>
+                            <li> <a href="daily-purchases.html">مشتريات يوميه</a> </li>
+                            <li> <a href="whole-purchases.html">مشتريات كليه</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">اضافه</a> 
+                        <ul class="sub-menu">
+                            <li> <a href="add-prodect.html">اضافه منتج</a> </li>
+                            <li> <a href="add-resource.html">اضافه مورد</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                        </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">الاعدادات</a> 
+                        <ul class="sub-menu">
+                            <li> <a href="prodect-preparation.html"> منتج</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing">
+        <div class="fffff">
+            <div class="container">
+                <select id="countriesDropdown" oninput="filterTable()">
+                 
+                  
+                    <option>h2</option>
+                     <option>h3</option>
+                    <option>h4</option>
+                     <option>h5</option>
+                    <option>h6</option>
+                  </select>
+                  
+                  <table id="myTable">
+                    <tr><th>Name</th><th>pris</th> </tr><!-- header row uses 'th' instead of 'td' -->
+                      
+                      
+                      
+                    <tr><td>Inga</td><td>h3</td><td> <a href="#">jhdfjkld</a></td></tr>
+                    <tr><td>Helena</td><td>h4</td></tr>
+                    <tr><td>Hans</td><td>h5</td></tr>
+                    <tr><td>Anna</td><td>h6</td></tr>
+                  </table>
+                <!-- <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <div class="box">
+                    <label for="bill">اسم المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                        <option value="1">option1</option>
+                    </select>
+                    <br>
+                    <label for="bill">سعر المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                    <br>
+                    <label for="bill">كميه المنتج</label>
+                    <select name="bill" id="bill">
+                        <option value="1">option1</option>
+                        <option value="2">option2</option>
+                        <option value="3">option3</option>
+                    </select>
+                </div>
+                <br>
+                <input class="submit-fffff" type="submit" value="submit"> -->
+            </div>
+        </div>
+    </div>
+    <!-- end landing -->
+</body>
+</html>

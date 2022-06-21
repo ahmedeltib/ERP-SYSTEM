@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- render all elment  -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <title>Reset</title>
+    <!-- <script>
+
+        let dropdown, table, rows, cells, country, filter;
+                            dropdown = document.getElementById("countriesDropdown");
+                            table = document.getElementById("myTable");
+                            rows = table.getElementsByTagName("tr");
+                            filter = dropdown.value;
+                          
+                            // Loops through rows and hides those with countries that don't match the filter
+                            for (let row of rows) { // for...of loops through the NodeList
+                              cells = row.getElementsByTagName("td");
+                              country = cells[1] || null; // gets the 2nd td or nothing
+                              // if the filter is set to 'All', or this is the header row, or 2nd td text matches filter
+                              if (filter === "All" || !country || (filter === country.textContent)) {
+                                row.style.display = ""; // shows this row
+                              }
+                              else {
+                                row.style.display = "none"; // hides this row
+                              }
+                            }
+                          }
+        
+            </script> -->
+           
+</head>
+<body>
+    <!-- start header -->
+    <div class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="imgs/heart-2320561_960_720.png">
+            </a>
+            <nav class="main-nav">
+                <i class="fas fa-bars"></i>
+                <ul class="links">
+                    <li class="menu">
+                         <a href="#">الفاتوره</a> 
+                         <ul class="sub-menu">
+                            <li> <a href="bill.html">reset</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                         </ul>
+                    </li>
+                    <li class="menu">
+                        <a href="#">المخازن</a> 
+                         <ul class="sub-menu">
+                            <li> <a href="daily-sales.html">مبيعات يوميه</a> </li>
+                            <li> <a href="whole-sales.html">مبيعات كليه</a> </li>
+                            <li> <a href="daily-purchases.html">مشتريات يوميه</a> </li>
+                            <li> <a href="whole-purchases.html">مشتريات كليه</a> </li>
+                         </ul>
+                    </li>
+                    <li class="menu">
+                         <a href="#">اضافه</a> 
+                         <ul class="sub-menu">
+                            <li> <a href="add-prodect.html">اضافه منتج</a> </li>
+                            <li> <a href="add-resource.html">اضافه مورد</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                         </ul>
+                    </li>
+                    <li class="menu">
+                         <a href="">الاعدادات</a> 
+                         <ul class="sub-menu">
+                            <li> <a href="prodect-preparation.html"> منتج</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                            <li> <a href="">gggg</a> </li>
+                         </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- end header -->
+    <!-- start landing -->
+    <div class="landing">
+        <!-- فاتوره  -->
+        <div class="bill">
+            <div class="container">
+              <div class="content">
+                 <select id="countriesDropdown" oninput="filterTable()">
+                    <option>شاي</option>
+                    <option>مكرونه</option>
+                    <option>ارز</option>
+                    <option>سكر</option>
+                  </select>
+                  
+                  <table id="myTable">
+                    <tr><th>الاسم</th><th>السعر</th></tr><!-- header row uses 'th' instead of 'td' -->
+                    <tr><td>شاي</td> <td>5</td> <td><a href="">fffff</a></td>  </tr>
+                    <tr><td>مكرونه</td> <td>7</td> <td><a href="">ggggg</a</td> </tr>
+                    <tr><td>ارز</td> <td>5</td> <td><a href="">lllll</a></td> </td>  </tr>
+                    <tr><td>سكر</td> <td>6</td> <td><a href="">nnnnn</a></td> </tr>
+                  </table>
+              </div>
+              <div class="form">
+                <form action=""method="">
+                  <table>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <label>الكميه</label>
+                          <input type="text" name="quintity">
+                        </td>
+                        <td>
+                          <label>السعر</label>
+                          <input type="text" name="price">
+                        </td>
+                        <td>
+                          <a href=""><i class="fa-solid fa-rectangle-xmark"></i></a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </form>
+                <!-- <br> -->
+                <input class="submit-bill" type="submit" value="submit">
+              </div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- end landing -->
+    <script>
+
+      let dropdown, table, rows, cells, country, filter;
+                          dropdown = document.getElementById("countriesDropdown");
+                          table = document.getElementById("myTable");
+                          rows = table.getElementsByTagName("tr");
+                          filter = dropdown.value;
+                        
+                          // Loops through rows and hides those with countries that don't match the filter
+                          for (let row of rows) { // for...of loops through the NodeList
+                            cells = row.getElementsByTagName("td");
+                            country = cells[1] || null; // gets the 2nd td or nothing
+                            // if the filter is set to 'All', or this is the header row, or 2nd td text matches filter
+                            if (filter === "All" || !country || (filter === country.textContent)) {
+                              row.style.display = ""; // shows this row
+                            }
+                            else {
+                              row.style.display = "none"; // hides this row
+                            }
+                          }
+                        // }
+      
+          </script>
+</body>
+</html>

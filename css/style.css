@@ -1,0 +1,1124 @@
+/* start global rules */
+:root {
+    --main-color:#2196f3;
+    --main-color-alt: #1787e0;
+    --main-transition: .4s;
+    --section-padding: 100px;
+    --section-margin: 100px;
+    --section-background: #ececec;
+    --par-color: #777;
+    --main-transition: .3s;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* small  */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+/* end global rules */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+}
+ul {
+    list-style :none;
+}
+a {
+    text-decoration: none;
+}
+/* start sigin-in */
+.login-1 {
+    display: flex;
+    min-height: 100vh;
+    direction: ltr;
+}
+.login-1 .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    background-color: #ffa00069;
+}
+@media (max-width: 991px) {
+    .login-1 .image  {
+        display: none;
+    }
+}
+.login-1 .image .content {
+    text-align: center;
+    padding: 0 20px;
+}
+.login-1 .image img:first-child {
+    width: 90px;
+    margin-bottom: 30px;
+}
+.login-1 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 401px;
+    margin: 0 auto;
+    color: var(--par-color);
+}
+.login-1 .image img:last-child {
+    margin: 50px auto 0;
+}
+.login-1 .form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-1 .form .content {
+    padding: 0 20px;
+    text-align: center;
+}
+.login-1 .form .content label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.login-1 .form .content label a {
+    color:  var(--main-color);
+}
+.login-1 .form .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.login-1 .form li {
+    list-style: none;
+    margin-bottom: 40px;
+}
+.login-1 .form li span {
+    color: #777;
+    font-size: 18px;
+}
+.login-1.form li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.login-1 .main-input {
+    display: block;
+    width: 450px;
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: #ececec;
+}
+.login-1 .main-input:focus {
+    outline: none;
+}
+.login-1 .submit-sigin-in {
+    display: block;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px auto;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.login-1 .submit-sigin-in:hover {
+    background-color: var(--main-color-alt);
+}
+/* end sigin-in */
+/* start login 2 */
+.login-2 {
+    display: flex;
+    min-height: 100vh;
+    direction: ltr;
+}
+.login-2 .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    background-color: #ffa00069;
+}
+@media (max-width: 991px) {
+    .login-2 .image  {
+        display: none;
+    }
+}
+.login-2 .image .content {
+    text-align: center;
+    padding: 0 20px;
+}
+.login-2 .image img:first-child {
+    width: 90px;
+    margin-bottom: 30px;
+}
+.login-2 h2 {
+    font-size: 30px;
+    font-weight: bold;
+    max-width: 401px;
+    margin: 0 auto;
+    color: var(--par-color);
+}
+.login-2 .image img:last-child {
+    margin: 50px auto 0;
+}
+.login-2 .form {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-2 .form .content {
+    padding: 0 20px;
+    text-align: center;
+}
+.login-2 .form .content label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.login-2 .form .content label a {
+    color:  var(--main-color);
+}
+.login-2 .form .title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.login-2 .form li {
+    list-style: none;
+    margin-bottom: 40px;
+}
+.login-2 .form li span {
+    color: #777;
+    font-size: 18px;
+}
+.login-2 .form li a {
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.login-2 .main-input {
+    display: block;
+    width: 450px;
+    height: 30px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 6px;
+    border: none;
+    background-color: #ececec;
+}
+.login-2 .main-input:focus {
+    outline: none;
+}
+.login-2 .submit-sigin-in {
+    display: block;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 30px auto;
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 6px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.login-2 .submit-sigin-in:hover {
+    background-color: var(--main-color-alt);
+}
+/* end login 2*/
+/* start header  */
+.header {
+    box-shadow: 0 0 10px #ddd;
+    right: 0;
+    left: 0;
+    z-index: 100;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--main-color);
+    min-height: 73.6px;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    max-width: 100%;
+}
+.header .logo img {
+    width: 100px;
+    height: 70px;
+    max-width: 100%;
+    border-radius: 50%;
+}
+.header .main-nav {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header .main-nav i {
+    font-size: 22px;
+    color: black;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .header .main-nav i {
+        display: none;
+    }
+}
+.header .main-nav i:hover + .links {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+}
+.header .main-nav .links {
+    display: flex;
+}
+@media (max-width: 767px) {
+    .header .main-nav .links {
+        display: none;
+    }
+}
+.header .main-nav .links .menu {
+    width: 130px;
+    padding: 15px 0;
+    text-align: center;
+    margin-right: 10px;
+    position: relative;
+}
+.header .main-nav .links .menu:hover .sub-menu {
+    display: block;
+}
+.header .main-nav .links .menu > a {
+    display: block;
+    padding: 0 15px;
+    font-size: 18px;
+    color: var(--main-color);
+}
+.header .sub-menu {
+    background-color: var(--section-background);
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    transition: var(--main-transition);
+    display: none;
+    z-index: 2;
+}
+.header .sub-menu li {
+    margin:5px;
+}
+.header .sub-menu li:not(:last-child) {
+    border-bottom: 1px solid #b4b4b4;
+}
+.header .sub-menu li a {
+    display: block;
+    padding: 15px 20px;
+    transition: var(--main-transition);
+}
+.header .sub-menu li a:hover {
+    background-color: orange;
+}
+/* end header  */
+/* start landing */
+.landing {
+    background-image: url("imgs/istockphoto-1132768235-612x612.jpg");
+    background-size: cover;
+    min-width: 100%;
+    min-height: calc(100vh - 73.6px);
+    position: relative;
+}
+/* end landing */
+/* start design  */
+.design {
+    padding-top: var(--section-padding);
+}
+.design .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    color: white;
+}
+@media (max-width: 991px) {
+    .design .container {
+        flex-direction: column;
+    }
+}
+.design .text {
+    flex-basis: 50%;
+    color: white;
+    z-index: 2;
+    text-align: center;
+    order: -1;
+}
+.design .text h3 {
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.design .text p {
+    color: var(--par-color);
+    font-size: 20px;
+    line-height: 1.6;
+    max-width: 455px;
+    margin: 15px auto;
+}
+.design .content {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    flex-basis: 50%;
+}
+.design .content .box {
+    background-color: white;
+    color: var(--par-color);
+    padding: 20px;
+    text-align: center;
+    opacity: .5;
+    transition: var(--main-transition);
+    position: relative;
+    min-width: 147px;
+    min-height: 133px;
+}
+.design .content .box:hover {
+    opacity: 1;
+    transform:translatey(-10px);
+}
+.design .content .box a i {
+    color: var(--par-color);
+    font-size: 50px;
+}
+.design .content .box p {
+    margin-top: 10px;
+}
+/* end design  */
+/* start bill  */
+/* بدايه الفاتوره  */
+.bill {
+    padding-top: var(--section-padding);
+}
+.bill .container {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+@media (max-width: 991px) {
+    .bill .container {
+        flex-direction: column;
+    }
+}
+.bill .content {
+    flex-basis: 50%;
+}
+.bill .content table {
+    text-align: right;
+    width: 100%;
+}
+.bill .content select {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+    margin-bottom: 30px;
+}
+.bill select option {
+    background-color: var(--section-background);
+}
+.bill .form {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    min-height: 70vh;
+    border: 1px solid black;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+}
+.bill .form label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.bill .form input[type="text"] {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    padding: 7px;
+    border: none;
+    outline: none;
+}
+.bill .form .submit-bill {
+    display: block;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 19px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: var(--main-color);
+    color: white;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.bill .form .submit-bill:hover {
+    background-color: var(--main-color-alt);
+}
+/* نهايه الفاتوره  */
+/* end bill */
+
+/* start daily sales */
+/* المبيعات اليوميه  */
+.daily-sales {
+    padding-top: var(--section-padding);
+}
+.daily-sales .container {
+    position: relative;
+    color: white;
+}
+.daily-sales form {
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 30px 40px;
+    border-radius: 58px;
+}
+@media (max-width: 767px) {
+    .daily-sales form  {
+        flex-direction:  column;
+        padding: 10px 20px;
+    }
+}
+.daily-sales form .submit-daily-sales {
+    width: 130px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+@media (max-width: 767px) {
+    .daily-sales form .submit-daily-sales {
+        width: 100%;
+    }
+}
+.daily-sales form .submit-daily-sales:hover {
+    background-color: var(--main-color-alt);
+}
+.daily-sales form input[type="month"] {
+    display: block;
+    width: calc(100% - 130px);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+@media (max-width: 767px) {
+    .daily-sales form input[type="month"] {
+        width: 100%;
+    }
+}
+.daily-sales form input[type="month"]:focus {
+    outline: none;
+}
+.daily-sales form .submit-daily-purchases {
+    width: 100%;
+}
+.daily-sales table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+    margin: 30px auto;
+}
+.daily-sales table thead {
+    background-color: orange;
+}
+.daily-sales table thead tr td {
+    padding: 10px;
+}
+/* نهايه المبيعات اليوميه  */
+/* end daily sales */
+/* start whole sales  */
+/* المبيعات الكليه  */
+.whole-sales {
+    padding-top: var(--section-padding);
+}
+.whole-sales .container {
+    position: relative;
+    color: white;
+}
+.whole-sales form {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.whole-sales form .submit-whole-sales {
+    margin-right: 30px;
+    width: 100px;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .whole-sales form .submit-whole-sales {
+        margin: 0 auto 30px;
+    }
+}
+.whole-sales form .submit-whole-sales:hover {
+    background-color: var(--main-color-alt);
+}
+.whole-sales form input[type="month"] {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    max-width: 100%;
+}
+@media (max-width: 767px) {
+    .whole-sales form input[type="month"] {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+.whole-sales form input[type="month"]:focus {
+    outline: none;
+}
+.whole-sales table {
+    width: 100%;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.whole-sales table thead {
+    background-color: orange;
+}
+.whole-sales table thead tr td {
+    padding: 10px;
+}
+/* نهايه المبيعات الكليه  */
+/* end whole sales  */
+/* start daily purchases  */
+/* المشتريات اليوميه  */
+.daily-purchases {
+    padding-top: var(--section-padding);
+}
+.daily-purchases .container {
+    position: relative;
+    color: white;
+}
+.daily-purchases form {
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    margin: auto;
+    padding: 30px 40px;
+    border-radius: 58px;
+}
+@media (max-width: 767px) {
+    .daily-purchases form  {
+        flex-direction:  column;
+        padding: 10px 20px;
+    }
+}
+.daily-purchases form .submit-daily-purchases {
+    width: 130px;
+    font-size: 20px;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: var(--main-transition);
+}
+@media (max-width: 767px) {
+    .daily-purchases form .submit-daily-purchases {
+        width: 100%;
+    }
+}
+.daily-purchases form .submit-daily-purchases:hover {
+    background-color: var(--main-color-alt);
+}
+.daily-purchases form input[type="month"] {
+    display: block;
+    width: calc(100% - 130px);
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+}
+@media (max-width: 767px) {
+    .daily-purchases form input[type="month"] {
+        width: 100%;
+    }
+}
+.daily-purchases  form input[type="month"]:focus {
+    outline: none;
+}
+.daily-purchases table {
+    width: 100%;
+    text-align: center;
+    border: 1px solid;
+    margin: 30px auto;
+}
+.daily-purchases table thead {
+    background-color: orange;
+}
+.daily-purchases table thead tr td {
+    padding: 10px;
+}
+/* end daily purchases  */
+/* start whole .daily-purchases  */
+/* المشتريات الكليه  */
+.whole-purchases {
+    padding-top: var(--section-padding);
+}
+.whole-purchases .container {
+    position: relative;
+    color: white;
+}
+.whole-purchases form {
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.whole-purchases form .submit-whole-sales {
+    margin-right: 30px;
+    width: 100px;
+    padding: 20px;
+    background-color: var(--main-color);
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .whole-purchases form .submit-whole-purchases {
+        margin: 0 auto 30px;
+    }
+}
+.whole-purchases form .submit-whole-sales:hover {
+    background-color: var(--main-color-alt);
+}
+.whole-purchases form input[type="month"] {
+    width: 400px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 30px;
+    margin-right: 50px;
+    max-width: 100%;
+}
+@media (max-width: 767px) {
+    .whole-purchases form input[type="month"] {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+}
+.whole-purchases form input[type="month"]:focus {
+    outline: none;
+}
+.whole-purchases table {
+    width: 100%;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+.whole-purchases table thead {
+    background-color: orange;
+}
+.whole-purchases table thead tr td {
+    padding: 10px;
+}
+/* end whole .daily-purchases  */
+/* start add prodect  */
+/* اضافه منتج  */
+.add-prodect {
+    padding-top: calc(var(--section-padding)/2);
+}
+.add-prodect .container {
+    position: relative;
+    color: white;
+}
+.add-prodect form {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+
+}
+.daily-sales.php form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    color: black;
+    font-size: 25px;
+
+}
+
+
+.add-prodect form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: right;
+    color: black;
+    font-size: 25px;
+
+}
+.add-prodect form input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    outline: none;
+}
+.add-prodect form .submit-add-prodect {
+    display: block;
+    width: fit-content;
+    padding: 15px 25px;
+    font-size: 20px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: var(--main-transition);
+    margin-left: auto;
+    cursor: pointer;
+}
+.add-prodect form  .submit-add-prodect:hover {
+    background-color: var(--main-color-alt);
+}
+/* نهايه اضافه منتج  */
+/* end add prodect  */
+/* start add resource  */
+/* اضافه مورد  */
+.add-resource {
+    padding-top: var(--section-padding);
+}
+.add-resource .container {
+    position: relative;
+    color: white;
+}
+.add-resource form {
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+}
+.add-resource form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.add-resource form input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    outline: none;
+}
+.add-resource form .submit-add-resource {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    padding: 15px 25px;
+    background-color: var(--main-color);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    cursor: pointer;
+}
+.add-resource form .submit-add-resource:hover {
+    background-color: var(--main-color-alt);
+}
+/* نهايه اضافه مورد  */
+/* end add resource  */
+/* start setting prodect  */
+/* اضافه منتج  */
+.prodect-preparation {
+    padding-top: var(--section-padding);
+}
+.prodect-preparation .container {
+    position: relative;
+}
+.prodect-preparation .search {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+.prodect-preparation table {
+    width: 100%;
+    margin: 30px auto;
+    color: white;
+}
+.prodect-preparation table thead {
+    background-color: red;
+    color: white;
+}
+.prodect-preparation table thead td {
+    padding: 20px;
+}
+.prodect-preparation table tbody {
+    background-color: #524A4E;
+}
+.prodect-preparation table tbody tr td {
+    padding: 10px;
+}
+.prodect-preparation table tbody tr td a {
+    color: white;
+}
+.prodect-preparation table tbody tr td a:hover {
+    text-decoration: underline;
+}
+.prodect-preparation .submit-prodect-preparation {
+    width: 1140px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.prodect-preparation .submit-prodect-preparation:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+/* نهايه اضافه منتج  */
+/* end setting prodect  */
+/* start invoice-preparation */
+/* اعداد فاتوره  */
+.invoice-preparation {
+    padding-top: var(--section-padding);
+}
+.invoice-preparation .container {
+    position: relative;
+}
+.invoice-preparation .search {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.invoice-preparation table {
+    width: 100%;
+    margin: 30px auto;
+    color: white;
+    position: relative;
+}
+.invoice-preparation table thead {
+    background-color: red;
+}
+.invoice-preparation table thead td {
+    padding: 20px;
+}
+.invoice-preparation table tbody {
+    background-color: #524A4E;
+}
+.invoice-preparation table tbody td {
+    padding: 10px;
+}
+.invoice-preparation table tbody td a {
+    color: white;
+    transition: var(--main-transition);
+}
+.invoice-preparation table tbody td a:hover {
+    text-decoration: underline;
+}
+.invoice-preparation .submit-invoice-preparation {
+    width: 1140px;
+    max-width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+.invoice-preparation .submit-invoice-preparation:hover {
+    background-color: var(--main-color);
+    color: white;
+}
+/* نهايه اعداد فاتوره  */
+/* end invoice-preparation */
+/* start logo  */
+
+/* end logo  */
+.sigin {
+    width: 100%;
+    height: 100vh;
+    padding-top: var(--section-margin);
+    padding-bottom: var(--section-padding);
+    direction: ltr;
+    background-image: url("imgs/smartphone-5765848_960_720.png");
+    background-size: cover;
+
+}
+.sigin .form {
+    text-align: center;
+    padding: 0 20px;
+}
+.sigin h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0px auto;
+    max-width: 250px;
+}
+.sigin p {
+    font-size: 20px;
+    color: #777;
+    margin: 20px auto 0;
+}
+.sigin div {
+    margin: 20px auto;
+}
+.sigin form {
+    width: 600px;
+    max-width: 100%;
+    margin: 30px auto;
+}
+.sigin form .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sigin form .line .text {
+    width: 45%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    outline: none;
+}
+.sigin .input {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #f6f6f6;
+    outline: none;
+}
+.sigin .submit-logo {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.sigin .submit-logo:hover {
+    background-color: green;
+    color: white;
+}
+td {
+   color: #00000069;
+}
+/* start select  */
+/* .fffff {
+    direction: ltr;
+    padding-top: calc(var(--section-padding)/2);
+}
+.fffff .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 40px;
+}
+.fffff .box {
+    border: 1px solid;
+    padding: 10px;
+}
+.fffff .box label {
+    margin-bottom: 5px;
+    display: block;
+}
+.fffff .box select {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
+    outline: none;
+}
+.fffff .box select option {
+    background-color: #ececec;
+}
+.fffff .submit-fffff {
+    display: block;
+    width: 1140px;
+    margin: 40px auto;
+    padding: 5px;
+    border: none;
+    outline: none;
+    transition: var(--main-transition);
+    cursor: pointer;
+}
+.fffff .submit-fffff:hover {
+    background-color: var(--main-color);
+    color: white;
+} */
+/* end select  */
